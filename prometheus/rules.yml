@@ -1,0 +1,29 @@
+groups:
+  - name: alerts
+    rules:
+    - alert: AppErrorsTotalHigh
+      expr: sum(app_errors_total) by (job) > 5
+      for: 15s
+      labels:
+        severity: high
+      annotations:
+        summary: "High total application errors"
+        description: "The total application errors exceeded 5 for job."
+
+    - alert: AppFunctionDurationCountHigh
+      expr: sum(app_function_duration_seconds_count) by (job) > 5
+      for: 15s
+      labels:
+        severity: high
+      annotations:
+        summary: "High application function duration count"
+        description: "The application function duration count exceeded 5 for job."
+
+    - alert: AppWebPageDown
+      expr: pg_p != 1 or absent(pg_up) == 1
+      for: 10s
+      labels:
+        severity: critical
+      annotations:
+        summary: "Critical WebPage Down"
+        description: "The application state is down."
