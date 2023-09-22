@@ -15,6 +15,4 @@ pip install python-decouple
 cd ~/docker-compose 
 sudo docker-compose up -d
 # O script a ser executado
-read OUTRO_SCRIPT= "~/server.sh";
-chmod +x $OUTRO_SCRIPT
 $SHELL ~/server.sh
