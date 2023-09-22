@@ -12,7 +12,7 @@ echo "- second step"
 pip install Flask prometheus_client
 pip install python-decouple
 #executando conteiners docker isola
-cd ~/docker-compose 
+cd ./docker-compose 
 sudo docker-compose up -d
-# O script a ser executado
-$SHELL ~/server.sh
+#Script a ser executado o server
+$SHELL ~/desafio-o11y/server.sh
