@@ -5,7 +5,7 @@ sudo apt install gnome-terminal
 #baixando e instalando Docker Compose
 echo "- dawn & install Docker Compose"
 sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
+sudo chmod 754 /usr/local/bin/docker-compose
 
 echo "- second step"
 #executando pip install
