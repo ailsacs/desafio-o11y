@@ -47,7 +47,7 @@ Ex: PATH = root/documents/desafio-o11y
 
 - Altere o nível de permissão do build.sh para execução e inicie a automação.
 
-$ chmod +x build.sh
+$ chmod 754 build.sh
 $ ./build.sh
 
 
