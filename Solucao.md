@@ -39,7 +39,7 @@ Ex: PATH = root/documents/desafio-o11y
 - Abra os arquivos build.sh e server.sh em seu editor de texto usual (bloco de notas, VS Code)
 - Altere os PATH usados para o caminho do diretório "PATH/desafio-o11y"
 
--- #executando conteiners docker isola
+-- #executando conteiners docker isolado
 -- #Script a ser executado o server
 -- #acessando dir python-app
 
@@ -62,7 +62,7 @@ $ ./build.sh
 	
 ### Acesse a aplicação em seu http://localhost:3001
 
-- execute 6 ou mais vezes a opção "Gerar Erro" e "Calvular Duração"
+- execute 6 ou mais vezes a opção "Gerar Erro" e "Calcular Duração"
 - será processado dentro do monitoramento os disparos de alertas para o paínel de alertas https://webhook.site/
 
 # Parabéns, você acompanhou todo o processo fundamental para instrumentação e monitoramento de um ambiente de aplicação. 
